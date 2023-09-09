@@ -1,0 +1,167 @@
+/* Reset some default browser styles */
+.note::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+    background-color: #FFF6E4;
+    margin: 0;
+}
+
+/* Styling for the main container */
+#notes-container {
+    background-color: #FFE8C4;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: white; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Styling for the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    background-color: #fff1e4;
+}
+
+/* Styling for the sticky note icon */
+.fa-note-sticky {
+    font-size: 32px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Styling for the add note container */
+.add-note-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #333333;
+}
+
+/* Styling for the note input */
+#note-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Styling for the add note button */
+#add-note-btn {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #FFAA5A;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#add-note-btn:hover {
+    background-color: #FF9443 ;
+}
+
+/* Styling for the notes list container */
+#notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for individual notes */
+.note {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.container-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: #333333;
+    background-color: #ffeddf;
+}
+
+.content-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+/* Styling for the delete button icon */
+.delete-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 24px;
+    color: #FF5733;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    color: #FF0000;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust padding and font size for smaller screens */
+    #notes-container {
+        padding: 10px;
+    }
+
+    .add-note-container {
+        align-items: center;
+    }
+
+    #note-input {
+        font-size: 16px;
+    }
+
+    #add-note-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .note {
+        font-size: 16px;
+    }
+
+    .delete-btn {
+        font-size: 20px;
+    }
+}
