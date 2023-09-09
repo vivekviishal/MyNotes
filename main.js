@@ -59,12 +59,12 @@ function deleteNote(index) {
 }
 function handleDeleteButtonHover(index) {
     const deleteButton = document.querySelector(`.delete-btn-${index}`);
-    deleteButton.classList.add('fa-bounce');
+    deleteButton.classList.add('fa-beat');
 }
 
 function handleDeleteButtonUnhover(index) {
     const deleteButton = document.querySelector(`.delete-btn-${index}`);
-    deleteButton.classList.remove('fa-bounce');
+    deleteButton.classList.remove('fa-beat');
 }
 
 document.getElementById('add-note-btn').addEventListener('click', addNote);
